@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head> <meta charset="UTF-8">
+<body>
+<p id="demo"></p>
+<script>
+
+
+var myJSON = '{"stop_code": "1","stop_name": "Turun satama (Silja)", "stop_lat": 60.43497, "stop_lon": 22.21966,"merkki": "Merkki: GT","rengaskoko": "Rengaskoko: 28","vaihteidenlkm": "Vaihteiden lukumäärä: 10", "zone_id": "F\u00d6LI", "stop_timezone": "Europe\/Helsinki"}';
+
+var myObj = JSON.parse(myJSON);
+document.getElementById("demo").innerHTML = myObj.merkki + "<br>" + myObj.rengaskoko + "<br>" + myObj.vaihteidenlkm;
+
+
+</script>
+
+</head>
+</body>
+</html>
